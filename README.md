@@ -1,1 +1,1 @@
-Android / Kotlin 앱 공부
+## Android / Kotlin 앱 만들기 공부
