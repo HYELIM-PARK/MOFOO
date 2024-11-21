@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black">#FF000000</color>
+    <color name="White">#FFFFFFFF</color>
+    <color name="Gold">#FFFFD700</color>
+    <color name="PapayaWhip">#FFFFEFD5</color>
+    <color name="RoyalBlue">#FF4169E1</color>
+    <color name="Silver">#FFC0C0C0</color>
+    <color name="Gainsboro">#FFDCDCDC</color>
+    <color name="AliceBlue">#FFF0F8FF</color>
+    <color name="DarkSalmon">#FFE9967A</color>
+    <color name="LightSalmon">#FFFFA07A</color>
+    <color name="DarkSlateGray">#FF2F4F4F</color>
+    <color name="Green">#0F9D58</color>
+
+</resources>
