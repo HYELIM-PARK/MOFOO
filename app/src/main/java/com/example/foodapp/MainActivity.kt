@@ -1,6 +1,5 @@
 package com.example.foodapp
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
@@ -8,11 +7,12 @@ import androidx.appcompat.app.AppCompatDelegate
 import com.example.foodapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private val binding : ActivityMainBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
+
+    private lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)

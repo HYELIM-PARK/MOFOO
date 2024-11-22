@@ -13,4 +13,8 @@
     <color name="DarkSlateGray">#FF2F4F4F</color>
     <color name="Green">#0F9D58</color>
 
+
+    <!-- 하단 네비게이션 클릭/언클릭 색상 -->
+    <drawable name="bottom_frag_select">@color/DarkSlateGray</drawable>
+    <drawable name="bottom_frag_unselect">@color/Silver</drawable>
 </resources>

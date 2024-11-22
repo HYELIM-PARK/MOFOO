@@ -5,12 +5,15 @@
     android:layout_height="match_parent"
     tools:context=".MyPageFragment">
 
-    <TextView
+    <Button
+        android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="마이페이지 화면 입니다."
-        android:textSize="40dp"
-        android:textStyle="bold" />
+        android:background="@drawable/solid_btn"
+        android:backgroundTint="@color/DarkSalmon"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:text="로그인" />
 
 </FrameLayout>
