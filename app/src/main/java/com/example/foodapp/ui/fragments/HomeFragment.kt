@@ -1,0 +1,48 @@
+package com.example.foodapp.ui.fragments
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
+import com.example.foodapp.databinding.FragmentHomeBinding
+import com.example.foodapp.viewmodel.SharedViewModel
+
+
+class HomeFragment : Fragment() {
+    private val sharedViewModel: SharedViewModel by activityViewModels() // ViewModel 공유
+    private lateinit var binding: FragmentHomeBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        sharedViewModel.userId.observe(viewLifecycleOwner) {id ->
+            binding.idprint.text = id
+        }
+        sharedViewModel.password.observe(viewLifecycleOwner) {pw ->
+            binding.passprint.text = pw
+        }
+
+    }
+
+    companion object {
+        @JvmStatic
+        fun newInstance(id: String, pw: String) =
+            HomeFragment().apply {
+                arguments = Bundle().apply {
+                    putString("id", id)
+                    putString("pw", pw)
+                }
+            }
+    }
+}
